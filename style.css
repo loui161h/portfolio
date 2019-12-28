@@ -6,6 +6,10 @@ html {
 body {
     margin: 0;
     padding: 0;
+    background-color: white;
+    background: url(baggrund/baggrundsbillede.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 
 }
 
@@ -13,67 +17,83 @@ img {
     width: 100%;
 }
 
+/*SPLASH */
 
-a {
-    text-decoration: none;
-}
-
-
-/* HEADERWRAPPER */
-#header_wrapper {
-
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-
-#fb_ikon {
-    background-image: url(icons/fbikon.svg);
+#splash {
+    background-size: cover;
     position: relative;
-    display: flex;
-    top: 2vw;
-    left: 1vw;
-    width: 2vw;
-    height: 2vw;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+
+
 }
 
-#in_ikon {
-    background-image: url(icons/inikon.svg);
-    position: relative;
-    display: flex;
-    left: 3vw;
-    top: 2vw;
-    width: 2vw;
-    height: 2vw;
-}
-
-
-#navn_portfolio {
+.splash_img {
     position: absolute;
-    top: 2vw;
-    left: 2vw;
+    width: 50vw;
+    height: 30vw;
+    top: 18vw;
+    left: 22vw;
+
+}
+
+/*SPLASH slut */
+
+#link a {
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    border-style: solid;
+    border-radius: 6px;
+    display: inline-block;
+
+}
+
+#link a:hover {
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    color: #1d1313;
 
 }
 
 
-/* HEADERWRAPPER slut */
+.headline {
+    padding-top: 3rem;
+    color: black;
+    opacity: 80%;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 2rem;
+    border-bottom: 1px solid black;
+
+}
+
+
+.headline2 {
+    padding-top: 1rem;
+    color: black;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5rem;
+}
 
 /* NAVIWRAPPER  */
 
 #nav_wrapper {
-    position: relative;
-    text-align: end;
+    position: absolute;
     letter-spacing: 2px;
     font-size: 1rem;
     font-family: sans-serif;
-    padding: 13px;
-    top: 2vw;
-    right: 6vw;
-
+    padding: 1rem;
+    top: 0vw;
+    background-color: white;
+    opacity: 60%;
+    width: 100%;
 }
-
-
 
 
 header nav a {
@@ -98,65 +118,315 @@ header nav a:hover {
 /* SKRIFT  */
 h1 {
     font-family: 'Raleway', sans-serif;
-    font-weight: 100;
     color: black;
     letter-spacing: 2px;
     font-size: 2rem;
+
 }
 
 h2 {
     font-family: 'Raleway', sans-serif;
     font-weight: 100;
     color: black;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     font-size: 1.3rem;
-    font-weight: 600;
+
+}
+
+h3 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+    color: black;
+    letter-spacing: 1px;
+    font-size: 1rem;
+    font-weight: bolder;
+
 }
 
 p {
     font-family: 'Raleway', sans-serif;
-    font-size: 1rem;
+    font-size: 0.9rem;
     color: black;
     letter-spacing: 1px;
-    font-weight: 100;
+    font-weight: regular;
+}
+
+li {
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.9rem;
+    color: black;
+    letter-spacing: 1px;
+    font-weight: regular;
+
+}
+
+ul {
+    list-style-type: none;
 }
 
 /* SKRIFT slut */
 
+/* PORTFOLIO  */
+
+.projekter_sectionwrapper {
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    justify-content: center;
+    top: -4vw;
+}
+
+.projekt_pic {
+    width: 25vw;
+    height: 25vw;
+    align-content: center;
+    object-fit: cover;
+}
+
+
+#projekter_col_top {
+    flex-grow: 1;
+    flex-basis: 400px;
+    margin: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    align-self: center;
+}
+
+
+.projekter_col_btm {
+    flex-grow: 1;
+    flex-basis: 400px;
+    margin: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-self: center;
+}
+
+
+.projekter_txt {
+    position: absolute;
+    letter-spacing: 5px;
+    font-family: 'PT Sans', sans-serif;
+    color: black;
+    width: 24vw;
+    padding: 10px;
+    background-color: white;
+    text-align: center;
+    top: 26vw;
+    left: 0.45vw;
+    opacity: 70%
+}
+
+.projekt_wrapper1,
+.projekt_wrapper2,
+.projekt_wrapper3,
+.projekt_wrapper4,
+.projekt_wrapper5,
+.projekt_wrapper6 {
+    display: flex;
+    position: relative;
+    padding: 9px;
+}
+
+/* PORTFOLIO slut */
+
+
+
 /* WEB */
 
-#web_container {
-    position: relative;
-    top: 5vw;
-    width: 100%;
-    text-align: justify;
-    margin-left: 2vw;
-    margin-right: 2vw;
-}
+.web_sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem;
+    margin: 3rem;
+    background-color: white;
+    opacity: 80%;
 
-#web_headline {
-    position: relative;
-    border-top: 1px solid #e5e6e9;
-    padding: 5px;
-    width: 90%;
-    margin-left: 2vw;
-    margin-left: 2vw;
 }
 
 
-#web_txt {
+.col {
+    flex-grow: 1;
+    flex-basis: 500px;
+
+}
+
+.web_txt {
     position: absolute;
     letter-spacing: 1px;
     font-family: 'Raleway', sans-serif;
-    width: 60%;
+    color: black;
+    width: 50%;
     padding: 30px;
     top: 34vw;
 
 }
 
-#web_img {
-    width: 50%;
-    padding-left: 2vw;
+
+.col_img {
+    padding: 2vw;
+
 }
 
 /* WEB slut */
+
+/*
+#cv_sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+
+    padding: 0.6rem;
+    margin: 0.8rem;
+    background-color: #f2e085;
+
+}*/
+
+/* UX */
+
+.ux_sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem;
+    margin: 3rem;
+    background-color: white;
+    opacity: 80%;
+
+}
+
+.col_left {}
+
+.ux_txt {}
+
+.col_right {}
+
+
+/* UX slut */
+
+/* ANIMATION */
+
+/* ANIMATION slut */
+
+
+/* CONTENT  */
+
+/* CONTENT slut */
+
+
+/* CV  */
+#cv_txt {
+    position: absolute;
+    letter-spacing: 1px;
+    font-family: 'Raleway', sans-serif;
+    width: 60%;
+    padding: 30px;
+
+
+}
+
+/* CV slut */
+
+/* ABOUT  */
+
+.about_sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.col_right {
+    flex-grow: 1;
+    flex-basis: 600px;
+    padding: 2rem;
+    margin: 3rem;
+    text-align: center;
+    line-height: 30px;
+    background-color: white;
+    opacity: 65%;
+
+}
+
+.col_left {
+    display: flex;
+    flex-direction: row;
+
+    flex-grow: 1;
+    flex-basis: 500px;
+
+    padding: 0.8rem;
+    margin: 3rem;
+    justify-content: center;
+}
+
+.about_img {
+    width: 65%;
+
+
+}
+
+
+#fbikon {
+    background-image: url(icons/fbikon.svg);
+    position: relative;
+    display: flex;
+    bottom: 1vw;
+    right: -17vw;
+    width: 4vw;
+    height: 4vw;
+}
+
+#inikon {
+    background-image: url(icons/inikon.svg);
+    position: relative;
+    display: flex;
+    bottom: 5vw;
+    right: -22vw;
+    width: 4vw;
+    height: 4vw;
+}
+
+#igikon {
+    background-image: url(icons/igikon.svg);
+    position: relative;
+    display: flex;
+    bottom: 9vw;
+    right: -27vw;
+    width: 4vw;
+    height: 4vw;
+}
+
+
+#navn_portfolio {
+    position: absolute;
+    top: 2vw;
+    left: 2vw;
+
+
+}
+
+
+
+/* ABOUT slut */
+
+/*** FOOTER ***/
+.footer_txt {
+    display: flex;
+    padding: 0.8rem;
+    background-color: white;
+    opacity: 80%;
+
+
+}
+
+footer {
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 1px;
+    font-size: 0.6rem;
+
+
+}
+
+/*** FOOTER slut ***/
