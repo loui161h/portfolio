@@ -441,7 +441,7 @@ ul {
 /* ANIMATION slut */
 
 /* SEX OG SAMFUND */
-#animation .sectionwrapper {
+#sexogsamfund .sectionwrapper {
     display: flex;
     flex-wrap: wrap;
     padding: 2rem;
@@ -451,12 +451,12 @@ ul {
 }
 
 
-#animation .col {
+#sexogsamfund .col {
     flex-grow: 1;
     flex-basis: 500px;
 }
 
-#animation .txt {
+#sexogsamfund .txt {
     position: absolute;
     letter-spacing: 1px;
     font-family: 'Raleway', sans-serif;
@@ -467,14 +467,43 @@ ul {
 }
 
 
-#animation .col_img {
+#sexogsamfund .col_img {
     padding: 2vw;
 }
-
 
 /* SEX OG SAMFUND slut */
 
 /* CONTENT  */
+#content .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem;
+    margin: 3rem;
+    background-color: white;
+    opacity: 80%;
+}
+
+
+#content .col {
+    flex-grow: 1;
+    flex-basis: 500px;
+}
+
+#content .txt {
+    position: absolute;
+    letter-spacing: 1px;
+    font-family: 'Raleway', sans-serif;
+    color: black;
+    width: 50%;
+    padding: 30px;
+    top: 34vw;
+}
+
+
+#content .col_img {
+    padding: 2vw;
+}
+
 
 /* CONTENT slut */
 
