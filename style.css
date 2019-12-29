@@ -11,32 +11,41 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 
+
 }
 
 img {
     width: 100%;
 }
 
+
+button {
+    border: none;
+    background-color: white;
+}
+
 /*SPLASH */
 
 #splash {
-    background-size: cover;
+    background-size: 100%;
     position: relative;
     background-repeat: no-repeat;
-    width: 100%;
-    height: 100%;
 
 
 }
 
 .splash_img {
-    position: absolute;
-    width: 50vw;
-    height: 30vw;
-    top: 18vw;
-    left: 22vw;
+    background-image: url(logo.svg);
+    background-repeat: no-repeat;
 
+    position: absolute;
+    width: 80vw;
+    height: 40vw;
+    top: 18vw;
+    left: 12vw;
 }
+
+
 
 /*SPLASH slut */
 
@@ -44,20 +53,16 @@ img {
     text-decoration: none;
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
-    color: white;
-    background-color: black;
-    border-style: solid;
-    border-radius: 6px;
-    display: inline-block;
+    color: black;
+    background-color: palegoldenrod;
+    border-style: white solid;
+    padding: 10px;
 
 }
 
 #link a:hover {
-    text-decoration: none;
-    font-family: 'Raleway', sans-serif;
-    font-weight: bold;
-    color: #1d1313;
-
+    color: white;
+    background-color: beige;
 }
 
 
@@ -93,12 +98,13 @@ img {
     background-color: white;
     opacity: 60%;
     width: 100%;
+    text-align: center;
 }
 
 
 header nav a {
     text-decoration: none;
-    padding: 20px;
+    padding: 140px;
     color: black;
 }
 
@@ -120,7 +126,8 @@ h1 {
     font-family: 'Raleway', sans-serif;
     color: black;
     letter-spacing: 2px;
-    font-size: 2rem;
+    font-size: 1.5rem;
+    font-weight: 100;
 
 }
 
@@ -183,6 +190,10 @@ ul {
     object-fit: cover;
 }
 
+.projekt_pic:hover {
+    color: grey;
+
+}
 
 #projekter_col_top {
     flex-grow: 1;
@@ -209,15 +220,15 @@ ul {
 
 .projekter_txt {
     position: absolute;
-    letter-spacing: 5px;
+    letter-spacing: 2px;
     font-family: 'PT Sans', sans-serif;
     color: black;
-    width: 24vw;
-    padding: 10px;
+    width: 16vw;
+    padding: 12px;
     background-color: white;
     text-align: center;
-    top: 26vw;
-    left: 0.45vw;
+    top: 22vw;
+    left: 6vw;
     opacity: 70%
 }
 
@@ -232,13 +243,61 @@ ul {
     padding: 9px;
 }
 
+.projekt_wrapper1:hover {
+    box-shadow: 0 0 10px #ccc;
+}
+
+.projekt_wrapper2:hover {
+    box-shadow: 0 0 10px #ccc;
+}
+
+.projekt_wrapper3:hover {
+    box-shadow: 0 0 10px #ccc;
+}
+
+.projekt_wrapper4:hover {
+    box-shadow: 0 0 10px #ccc;
+}
+
+.projekt_wrapper5:hover {
+    box-shadow: 0 0 10px #ccc;
+}
+
+.projekt_wrapper6:hover {
+    box-shadow: 0 0 10px #ccc;
+}
+
+.projekter_txt:hover {
+    color: grey;
+}
+
+
+#projekter img {
+    border: 20px solid #ffdce2;
+}
+
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+}
+
+
 /* PORTFOLIO slut */
 
 
 
 /* WEB */
 
-.web_sectionwrapper {
+#grundweb .sectionwrapper {
     display: flex;
     flex-wrap: wrap;
     padding: 2rem;
@@ -249,13 +308,13 @@ ul {
 }
 
 
-.col {
+#grundweb .col {
     flex-grow: 1;
     flex-basis: 500px;
 
 }
 
-.web_txt {
+#grundweb .txt {
     position: absolute;
     letter-spacing: 1px;
     font-family: 'Raleway', sans-serif;
@@ -267,49 +326,153 @@ ul {
 }
 
 
-.col_img {
+#grundweb .col_img {
     padding: 2vw;
 
 }
 
 /* WEB slut */
 
-/*
-#cv_sectionwrapper {
-    display: flex;
-    flex-wrap: wrap;
-
-    padding: 0.6rem;
-    margin: 0.8rem;
-    background-color: #f2e085;
-
-}*/
 
 /* UX */
 
-.ux_sectionwrapper {
+
+#ux .sectionwrapper {
     display: flex;
     flex-wrap: wrap;
     padding: 2rem;
     margin: 3rem;
     background-color: white;
     opacity: 80%;
-
 }
 
-.col_left {}
 
-.ux_txt {}
+#ux .col {
+    flex-grow: 1;
+    flex-basis: 500px;
+}
 
-.col_right {}
+#ux .txt {
+    position: absolute;
+    letter-spacing: 1px;
+    font-family: 'Raleway', sans-serif;
+    color: black;
+    width: 50%;
+    padding: 30px;
+    top: 34vw;
+}
+
+
+#ux .col_img {
+    padding: 2vw;
+}
+
 
 
 /* UX slut */
 
+/* DESIGN SPRINT */
+
+#designsprint .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem;
+    margin: 3rem;
+    background-color: white;
+    opacity: 80%;
+}
+
+
+#designsprint .col {
+    flex-grow: 1;
+    flex-basis: 500px;
+}
+
+#designsprint .txt {
+    position: absolute;
+    letter-spacing: 1px;
+    font-family: 'Raleway', sans-serif;
+    color: black;
+    width: 50%;
+    padding: 30px;
+    top: 34vw;
+}
+
+
+#designsprint .col_img {
+    padding: 2vw;
+}
+
+/* DESIGN SPRINT slut */
+
 /* ANIMATION */
+
+#animation .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem;
+    margin: 3rem;
+    background-color: white;
+    opacity: 80%;
+}
+
+
+#animation .col {
+    flex-grow: 1;
+    flex-basis: 500px;
+}
+
+#animation .txt {
+    position: absolute;
+    letter-spacing: 1px;
+    font-family: 'Raleway', sans-serif;
+    color: black;
+    width: 50%;
+    padding: 30px;
+    top: 34vw;
+}
+
+
+#animation .col_img {
+    padding: 2vw;
+}
+
 
 /* ANIMATION slut */
 
+/* SEX OG SAMFUND */
+#animation .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem;
+    margin: 3rem;
+    background-color: white;
+    opacity: 80%;
+}
+
+
+#animation .col {
+    flex-grow: 1;
+    flex-basis: 500px;
+}
+
+#animation .txt {
+    position: absolute;
+    letter-spacing: 1px;
+    font-family: 'Raleway', sans-serif;
+    color: black;
+    width: 50%;
+    padding: 30px;
+    top: 34vw;
+}
+
+
+#animation .col_img {
+    padding: 2vw;
+}
+
+
+/* SEX OG SAMFUND slut */
 
 /* CONTENT  */
 
@@ -323,9 +486,19 @@ ul {
     font-family: 'Raleway', sans-serif;
     width: 60%;
     padding: 30px;
-
-
 }
+
+/*
+#cv_sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+
+    padding: 0.6rem;
+    margin: 0.8rem;
+    background-color: #f2e085;
+
+}*/
+
 
 /* CV slut */
 
@@ -334,8 +507,14 @@ ul {
 .about_sectionwrapper {
     display: flex;
     flex-wrap: wrap;
+
 }
 
+
+#about img {
+    border: 20px solid #ffdce2;
+
+}
 
 .col_right {
     flex-grow: 1;
@@ -345,7 +524,8 @@ ul {
     text-align: center;
     line-height: 30px;
     background-color: white;
-    opacity: 65%;
+    opacity: 75%;
+
 
 }
 
@@ -364,7 +544,6 @@ ul {
 .about_img {
     width: 65%;
 
-
 }
 
 
@@ -376,6 +555,7 @@ ul {
     right: -17vw;
     width: 4vw;
     height: 4vw;
+
 }
 
 #inikon {
