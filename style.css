@@ -477,6 +477,17 @@ header nav a:hover {
     padding: 2vw;
 }
 
+#spilwrapper #spil_billede iframe {
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 56.25vw;
+    border: 0;
+    align-items: center;
+    border: 30px solid #ffdce2;
+}
+
+
+
 
 /* ANIMATION slut */
 
