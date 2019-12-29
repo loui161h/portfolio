@@ -11,12 +11,11 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 
-
 }
 
 img {
     width: 100%;
-    border: 20px solid #ffdce2;
+    /*    border: 20px solid #ffdce2;*/
 }
 
 
@@ -118,7 +117,8 @@ li {
 
 
 .headline {
-    padding-top: 3rem;
+    padding-top: 4rem;
+    padding-bottom: 1.5rem;
     color: black;
     opacity: 80%;
     text-align: center;
@@ -130,11 +130,12 @@ li {
 
 
 .headline2 {
-    padding-top: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 2rem;
     color: black;
     text-align: center;
     font-family: 'Raleway', sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 
 #pdf {
@@ -223,7 +224,7 @@ header nav a:hover {
 #projekter_col_top {
     flex-grow: 1;
     flex-basis: 400px;
-    margin: 3rem;
+    margin: 1.5rem;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -235,11 +236,12 @@ header nav a:hover {
 .projekter_col_btm {
     flex-grow: 1;
     flex-basis: 400px;
-    margin: 3rem;
+    margin: 1.5rem;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-self: center;
+
 }
 
 
@@ -265,7 +267,7 @@ header nav a:hover {
 .projekt_wrapper6 {
     display: flex;
     position: relative;
-    padding: 9px;
+    padding: 2px;
 }
 
 .projekt_wrapper1:hover {
@@ -342,6 +344,7 @@ header nav a:hover {
     width: 90%;
     padding: -2vw;
     margin: 3vw;
+    border: 20px solid #ffdce2;
 
 }
 
@@ -358,10 +361,6 @@ header nav a:hover {
 }*/
 
 
-#grundweb .col_img {
-    padding: 2vw;
-
-}
 
 /* WEB slut */
 
@@ -384,8 +383,11 @@ header nav a:hover {
     flex-basis: 500px;
 }
 
-#ux .col_img {
-    padding: 2vw;
+#ux_img img {
+    width: 90%;
+    padding: -2vw;
+    margin: 3vw;
+    border: 20px solid #ffdce2;
 }
 
 
@@ -427,6 +429,14 @@ header nav a:hover {
     padding: 1.5vw;
 }
 
+#design_img {
+    width: 90%;
+    padding: -2vw;
+    margin: 3vw;
+    border: 20px solid #ffdce2;
+
+}
+
 /* DESIGN SPRINT slut */
 
 /* ANIMATION */
@@ -448,8 +458,11 @@ header nav a:hover {
 }
 
 
-#animation .col_img {
-    padding: 2vw;
+#animation_img img {
+    width: 90%;
+    padding: -2vw;
+    margin: 3vw;
+    border: 20px solid #ffdce2;
 }
 
 #spilwrapper #spil_billede iframe {
@@ -510,6 +523,7 @@ header nav a:hover {
     width: 90%;
     padding: -2vw;
     margin: 3vw;
+    border: 20px solid #ffdce2;
 
 }
 
@@ -531,20 +545,13 @@ header nav a:hover {
     flex-basis: 500px;
 }
 
-/*
-#content .txt {
-    position: absolute;
-    letter-spacing: 1px;
-    font-family: 'Raleway', sans-serif;
-    color: black;
-    width: 50%;
-    padding: 30px;
-    top: 34vw;
-}
-*/
 
-#content .col_img {
-    padding: 2vw;
+
+#content_img img {
+    width: 90%;
+    padding: -2vw;
+    margin: 3vw;
+    border: 20px solid #ffdce2;
 }
 
 
@@ -617,6 +624,7 @@ header nav a:hover {
 
 #about img {
     width: 90%;
+    border: 20px solid #ffdce2;
 }
 
 #about ul {
