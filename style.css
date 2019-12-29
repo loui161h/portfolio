@@ -460,6 +460,7 @@ header nav a:hover {
 #animation .col {
     flex-grow: 1;
     flex-basis: 500px;
+
 }
 
 /*#animation .txt {
@@ -486,7 +487,31 @@ header nav a:hover {
     border: 30px solid #ffdce2;
 }
 
+#skitser_img img {
+    width: 30%;
+    /*    padding: 2vw;*/
+}
 
+#moodboard_img img {
+    width: 50%;
+}
+
+#diagrammer_img img {
+    width: 30%;
+    margin: 1vw;
+    padding: 2vw;
+}
+
+#dokumentation .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 4rem;
+    margin: 4rem;
+    background-color: white;
+    opacity: 80%;
+}
+
+#dokumentation .col {}
 
 
 /* ANIMATION slut */
