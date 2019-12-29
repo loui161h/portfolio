@@ -16,6 +16,7 @@ body {
 
 img {
     width: 100%;
+    border: 20px solid #ffdce2;
 }
 
 
@@ -83,7 +84,7 @@ p {
     font-size: 0.9rem;
     color: black;
     letter-spacing: 1px;
-    font-weight: regular;
+
 }
 
 li {
@@ -91,10 +92,9 @@ li {
     font-size: 0.9rem;
     color: black;
     letter-spacing: 1px;
-    font-weight: regular;
+
 
 }
-
 
 #link {
     padding: 10px;
@@ -105,8 +105,8 @@ li {
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
     color: black;
-    background-color: palegoldenrod;
-    border-style: white solid;
+    background-color: #ffdce2;
+    /*   background-color: palegoldenrod;*/
     padding: 10px;
 
 }
@@ -147,8 +147,9 @@ li {
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
     color: black;
-    background-color: palegoldenrod;
-    border-style: white solid;
+    background-color: #ffdce2;
+    /*     background-color: palegoldenrod;*/
+    border-style: solid;
     padding: 10px;
 
 }
@@ -335,6 +336,12 @@ header nav a:hover {
 #grundweb .col {
     flex-grow: 1;
     flex-basis: 500px;
+}
+
+#web_img img {
+    width: 90%;
+    padding: -2vw;
+    margin: 3vw;
 
 }
 
@@ -377,19 +384,6 @@ header nav a:hover {
     flex-basis: 500px;
 }
 
-/*
-#ux .txt {
-    position: absolute;
-    letter-spacing: 1px;
-    font-family: 'Raleway', sans-serif;
-    color: black;
-    width: 50%;
-    padding: 30px;
-    top: 34vw;
-}
-*/
-
-
 #ux .col_img {
     padding: 2vw;
 }
@@ -416,16 +410,6 @@ header nav a:hover {
     flex-basis: 500px;
 }
 
-/*
-#designsprint .txt {
-    position: absolute;
-    letter-spacing: 1px;
-    font-family: 'Raleway', sans-serif;
-    color: black;
-    width: 50%;
-    padding: 30px;
-    top: 34vw;
-}*/
 
 #sketch_img img {
     width: 90%;
@@ -462,16 +446,6 @@ header nav a:hover {
     flex-basis: 500px;
 
 }
-
-/*#animation .txt {
-    position: absolute;
-    letter-spacing: 1px;
-    font-family: 'Raleway', sans-serif;
-    color: black;
-    width: 50%;
-    padding: 30px;
-    top: 34vw;
-}*/
 
 
 #animation .col_img {
@@ -532,20 +506,11 @@ header nav a:hover {
     flex-basis: 500px;
 }
 
-/*
-#sexogsamfund .txt {
-    position: absolute;
-    letter-spacing: 1px;
-    font-family: 'Raleway', sans-serif;
-    color: black;
-    width: 50%;
-    padding: 30px;
-    top: 34vw;
-}*/
+#billeddeling_img img {
+    width: 90%;
+    padding: -2vw;
+    margin: 3vw;
 
-
-#sexogsamfund .col_img {
-    padding: 2vw;
 }
 
 /* SEX OG SAMFUND slut */
@@ -622,10 +587,7 @@ header nav a:hover {
 }
 
 
-#about img {
-    border: 20px solid #ffdce2;
 
-}
 
 .col_right {
     flex-grow: 1;
@@ -652,8 +614,9 @@ header nav a:hover {
     justify-content: center;
 }
 
-.about_img {
-    width: 65%;
+
+#about img {
+    width: 90%;
 }
 
 #about ul {
